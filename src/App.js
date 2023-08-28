@@ -52,7 +52,7 @@ function App() {
       .then((res) => res.json())
       .then((data) => {
         setApidata(null);
-        if(data.cod === 404 || data.cod === 400) {
+        if(data.cod == 404 || data.cod == 400) {
           setShowweather([
             {
               type: "Not Found",
